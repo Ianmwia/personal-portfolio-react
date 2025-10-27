@@ -1,43 +1,21 @@
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
-import { useState } from "react"
 import About from "../pages/About"
 import Home from "../pages/Home"
 import Contact from "../pages/Contact"
 import Projects from "../pages/Projects"
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home')
-    const changePages = () => {
-        switch(currentPage){
-            case 'home':
-                return <Home />
-            case 'about':
-                return <About/>
-            case 'projects':
-                return <Projects />
-            case 'contact':
-                return <Contact/>
-            default:
-                return <Home />
-        }
-    }
-  return (
-    <>
-    <div className='flex flex-col min-h-screen'>
-    {/*Navbar */}
-    <Navbar setCurrentPage={setCurrentPage}/>
+  return(
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About />}/>
+        <Route path='/projects' element={<Projects />}/>
+        <Route path='/contact' element={<Contact />}/>
+      </Routes>
     
-    {/*Main */}
-    <main className='grow'>
-        <div>{changePages()}</div>
-    </main>
-    
-    {/*Footer */}
-    <Footer/>
-      </div>
-    </>
+    </Router>
   )
 }
 

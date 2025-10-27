@@ -1,8 +1,11 @@
+import Navbar from '../components/Navbar'
 import home_pfp from '../src/assets/WIN_Pro.jpg'
+import Footer from '../components/Footer'
 
 function Home(){
     return(
         <>
+        <Navbar/>
         <main>
             <div className="m-3 p-4">
             <p className='text-center font-bold tracking-tight text-7xl text-balance'>Lets Create something <span className='bg-linear-to-r from-pink-500 via-yellow-400 to-blue-500 bg-300% bg-clip-text text-transparent animate-gradient-slide'>Memorable</span> together</p>
@@ -16,6 +19,7 @@ function Home(){
                 <a href='' className='p-2.5 bg-gray-800 rounded cursor-pointer'>Projects</a>
             </div>
         </main>
+        <Footer/>
         </>
     )
 }

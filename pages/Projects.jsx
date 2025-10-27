@@ -24,16 +24,19 @@ function Projects(){
 }
 export default Projects
 */}
-import PorfolioCard from "../components/PorfolioCard";
+import PortfolioCard from "../components/PortfolioCard";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Projects(){
     return(
         <>
+        <Navbar/>
         <main className='m-2.5 p-2'>
             <h1 className='text-3xl font-bold mb-8'>Projects</h1>
             <div className='flex flex-wrap gap-8 justify-between'>
             <div>
-                <PorfolioCard
+                <PortfolioCard
                     imageUrl={weather}
                     title='Weather App'
                     description='Weather app to get the curent weatherm hourly forecast and 5 day forecast'
@@ -41,7 +44,7 @@ function Projects(){
                 />
             </div>
             <div className='flex flex-wrap justify-center gap-8 p-2.5'>
-                <PorfolioCard
+                <PortfolioCard
                     imageUrl={restaurant}
                     title='Restaurant'
                     description='Restaurant app showcasing delicious foods'
@@ -49,7 +52,7 @@ function Projects(){
                 />
             </div>
             <div className='flex flex-wrap justify-center gap-8 p-2.5'>
-                <PorfolioCard
+                <PortfolioCard
                     imageUrl={counter}
                     title='Calorie Counter'
                     description='App to count the total calories consumed'
@@ -58,6 +61,7 @@ function Projects(){
             </div>
             </div>
         </main>
+        <Footer/>
         </>
     )
 }

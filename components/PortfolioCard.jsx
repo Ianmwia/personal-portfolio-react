@@ -1,4 +1,4 @@
-export default function PorfolioCard ({imageUrl, title, link}){
+export default function PortfolioCard ({imageUrl, title, link}){
     return(
         <>
             <a href={link} target="_blank" className='block'>

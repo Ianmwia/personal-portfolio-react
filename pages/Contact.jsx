@@ -1,10 +1,12 @@
 import Form from '../components/Form'
 import image from '../src/assets/newsletter-ryan.svg'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 function Contact(){
     return(
         <>
-        
+        <Navbar/>
         <main className='p-5'>
             <h1 className='text-center font-bold'>CONTACT ME</h1>
             <div>
@@ -41,7 +43,7 @@ function Contact(){
             </div>
 
         </main>
-        
+        <Footer/>
         </>
     )
 }

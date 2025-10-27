@@ -1,4 +1,4 @@
-
+{/*}
 function Navbar({setCurrentPage}){
     
     return(
@@ -19,3 +19,20 @@ function Navbar({setCurrentPage}){
     )
 }
 export default Navbar
+*/}
+
+import { Link } from 'react-router-dom';
+export default function Navbar(){
+    return(
+        <div>
+            <nav className='p-2.5 bg-gray-900 text-white flex justify-between'>
+                <h1 className='text-xl font-bold'>Portfolio</h1>
+                <Link to='/'>Home</Link>
+                <Link to='/about'>About</Link>
+                <Link to='projects'>Projects</Link>
+                <Link to='/contact'>Contact</Link>
+            </nav>
+        
+        </div>
+    )
+}

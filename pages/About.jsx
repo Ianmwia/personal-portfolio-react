@@ -1,8 +1,11 @@
 import pfp from '../src/assets/WIN_Pro.jpg'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 function About(){
     return(
         <>
+        <Navbar/>
         <main className='ml-2.5 mr-2.5'>
         <div className='mb-5'>
         <h2 className='text-2xl font-bold text-gray-900'>About Me</h2>
@@ -29,6 +32,7 @@ function About(){
             </ul>
         </div>
         </main>
+        <Footer/>
         </>
     )
 }
