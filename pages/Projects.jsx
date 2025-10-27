@@ -39,7 +39,7 @@ function Projects(){
                 <PortfolioCard
                     imageUrl={weather}
                     title='Weather App'
-                    description='Weather app to get the curent weatherm hourly forecast and 5 day forecast'
+                    description='Weather app to get the current weather hourly forecast and 5 day forecast'
                     link='https://weather-now-capstone.netlify.app/'
                 />
             </div>
