@@ -12,7 +12,6 @@ function Navbar({setCurrentPage}){
                 onClick={()=> setCurrentPage('about')
                 } className='hover:scale-105 transition duration-300 hover:decoration-amber-400 hover:underline'>About</li>
                 <li onClick={()=> setCurrentPage('projects')} className='hover:scale-105 transition duration-300 hover:decoration-amber-400 hover:underline'>Projects</li>
-                <li onClick={()=> setCurrentPage('blog')} className='hover:scale-105 transition duration-300 hover:decoration-amber-400 hover:underline'>Blog</li>
                 <li onClick={()=> setCurrentPage('contact')} className='hover:scale-105 transition duration-300 hover:decoration-amber-400 hover:underline'>Contact</li>
             </ul>
         </nav>
