@@ -5,7 +5,6 @@ import { useState } from "react"
 import About from "../pages/About"
 import Home from "../pages/Home"
 import Contact from "../pages/Contact"
-import Blog from "../pages/Blog"
 import Projects from "../pages/Projects"
 
 function App() {
@@ -18,8 +17,6 @@ function App() {
                 return <About/>
             case 'projects':
                 return <Projects />
-            case 'blog':
-                return <Blog />
             case 'contact':
                 return <Contact/>
             default:
